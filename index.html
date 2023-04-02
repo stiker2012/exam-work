@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-        <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <title>toyr-gide</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="js/script.js">
@@ -18,10 +18,10 @@
         <header class="container__header">
           <div class="header__title">
             <h3>TUR-GUIDE</h3>
-            <p>Stories</p>
-            <p>Gallery</p>
-            <p>Features</p>
-            <p>Write to us</p>
+            <p><a href="#Stories">Stories</a></p>
+            <p><a href="#Gallery">Gallery</a></p>
+            <p><a href="#Features">Features</a></p>
+            <p><a href="#Write">Write to us</a></p>
           </div>
           <div class="header__icons">
             <!-- 1 -->
@@ -45,9 +45,21 @@
               <img src="images/gmail-128.png" alt="5" />
             </div>
           </div>
+          <div class="burger">
+            <input type="checkbox" id="burger">
+            <label for="burger">☰</label>
+            <nav>
+              <ul>
+                <li><a href="#Stories">Stories</a> </li>
+                <li><a href="#Gallery">Gallery</a> </li>
+                <li><a href="#Features">Features</a> </li>
+                <li><a href="#Write">Write to us</a> </li>
+              </ul>
+            </nav>
+          </div>
         </header>
         <main class="container__main">
-          <section class="main__cards">
+          <section id="Stories" class="main__cards">
             <!-- 1 -->
             <div class="card__main m_c-1">
               <div class="card__main--info">
@@ -68,11 +80,14 @@
                 </div>
               </div>
               <div class="card__main--image">
-                <img src="https://picsum.photos/id/10/750/600" alt="1" />
+                <img src="https://picsum.photos/id/10//600" alt="1" />
               </div>
             </div>
             <!-- 2 -->
             <div class="card__main m_c-2">
+                <div class="card__main--image">
+                <img src="https://picsum.photos/id/11/500/500" alt="1" />
+              </div>
               <div class="card__main--info">
                 <h2>Let's hit the road</h2>
                 <p>
@@ -80,19 +95,16 @@
                   cum, praesentium dolores neque magni alias voluptatum
                   quibusdam expedita distinctio nam ipsum quas veritatis!
                   Tempora, voluptas amet distinctio placeat eum reiciendis!
-                </p>
-                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi, nisi sit minus laboriosam quam aliquid esse iusto
                   veniam nulla id!
                 </p>
+           
                 <div class="card__main--bnt">
                   <button> START</button>
                 </div>
               </div>
-              <div class="card__main--image">
-                <img src="https://picsum.photos/id/11/500/500" alt="1" />
-              </div>
+          
             </div>
             <!-- 3 -->
             <div class="card__main m_c-3">
@@ -103,8 +115,6 @@
                   cum, praesentium dolores neque magni alias voluptatum
                   quibusdam expedita distinctio nam ipsum quas veritatis!
                   Tempora, voluptas amet distinctio placeat eum reiciendis!
-                </p>
-                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi, nisi sit minus laboriosam quam aliquid esse iusto
                   veniam nulla id!
@@ -118,62 +128,59 @@
               </div>
             </div>
           </section>
-          <section class="main__gallery">
+          <section id="Gallery" class="main__gallery">
             <h2 class="main__title">Gallery</h2>
             <div class="gallery__main">
               <!-- 1 -->
-            <div class="main__gallery-image">
-              <img src="https://picsum.photos/id/13/400/600" alt="" />
+            <div class="main__gallery-image s1">
+              <img src="https://picsum.photos/id/13/750/600" alt="" />
             </div>
             <!-- 2 -->
             <div class="main__gallery-image">
-              <img src="https://picsum.photos/id/14/400/600" alt="" />
+              <img src="https://picsum.photos/id/14/750/600" alt="" />
             </div>
             <!-- 3 -->
             <div class="main__gallery-image">
-              <img src="https://picsum.photos/id/15/400/600" alt="" />
+              <img src="https://picsum.photos/id/15/750/600" alt="" />
             </div>
             <!-- 4 -->
             <div class="main__gallery-image">
-              <img src="https://picsum.photos/id/16/400/600" alt="" />
+              <img src="https://picsum.photos/id/16/750/600" alt="" />
             </div>
-            </div>
-            <div class="gallery__swiper">
-              <!-- Additional required wrapper -->
-              <div class="gallery__swiper-wrapper">
-                <!-- Slides -->
-                <div class="gallery__swiper-slide">
-                  <div class="gallery__image">
-                    <img src="https://picsum.photos/id/13/400/600" alt="">
-                  </div>
-                </div>
-                <div class="gallery__swiper-slide">
-                  <div class="gallery__image">
-                    <img src="https://picsum.photos/id/14/400/600" alt="">
-                  </div>
-                </div>
-                <div class="gallery__swiper-slide">
-                  <div class="gallery__image">
-                    <img src="https://picsum.photos/id/15/400/600" alt="">
-                  </div>
-                </div>
-                <div class="gallery__swiper-slide">
-                  <div class="gallery__image">
-                    <img src="https://picsum.photos/id/16/400/600" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="gallery__buttons-320-768">
-              <button type="button" class="gallery__btn gallery__btn--prev">
-                <img src="image/Popular/Vector.svg" alt="">
-              </button>
-              <button type="button" class="gallery__btn gallery__btn--next ">
-                <img src="image/Popular/Vector.svg" alt="">
-              </button>
-            </div>
+          </div>
+          <div class="main__gallery-buttons">
+            <input type="radio" id="r1"  checked>
+            <input type="radio" id="r2" >
+            <input type="radio" id="r3">
+            <input type="radio" id="r4">
+          </div>
+          <nav class="gallery-buttons-nav">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+          </nav>
+          <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="https://picsum.photos/id/13/750/600" alt="" />
+      <!-- <img src="https://picsum.photos/id/14/750/600" alt="" />
+      <img src="https://picsum.photos/id/15/750/600" alt="" />
+      <img src="https://picsum.photos/id/16/750/600" alt="" /> -->
+    </div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/14/750/600" alt="" /></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/15/750/600" alt="" /></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/16/750/600" alt="" /></div>
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
           </section>
-          <section class="main__features">
+          <section id="Features" class="main__features">
             <h2 class="main__title">Features</h2>
             <div class="main__features-cards">
                <!-- 1 -->
@@ -256,7 +263,7 @@
             </div>
             </div>
           </section>
-          <section class="main__write">
+          <section id="Write" class="main__write">
             <h2 class="main__title">Write to us</h2>
             <form class="features__form" action="">
               <div class="features__form-1">
